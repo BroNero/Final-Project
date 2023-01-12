@@ -1,0 +1,815 @@
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F6F8F9;
+}
+
+p,
+h1,
+h2,
+h3,
+li {
+    font-family: "Ubuntu";
+}
+
+/* daiwyo header  */
+header {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F8F9;
+    padding: 25px;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.logo {
+    font-size: 0.688rem;
+    animation: swing 3s infinite;
+
+    color: #FA6980;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home {
+    color: black;
+    font-size: 0.688rem;
+    border-bottom: rgb(255, 0, 136) solid 3px;
+
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+}
+
+li {
+    color: #585b5f;
+    font-size: 0.688rem;
+}
+
+li:hover {
+    border-bottom: rgb(255, 0, 136) solid 3px;
+}
+
+/* damtavrda header  */
+/* daiwyo 1 seqcia */
+.section1 {
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+.backimg {
+    background-image: url(../img/backimg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 840px;
+    transition: transform .5s;
+}
+
+.backimg:hover {
+    transform: scale(1.2);
+}
+
+.backimg1 {
+    margin-top: 200px;
+    width: 500px;
+    color: white;
+}
+
+button {
+    margin-top: 30px;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: #FA6980;
+}
+
+.imgbutton {
+    color: white;
+    background-color: #FA6980;
+}
+
+.imgbutton:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+h1 {
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+hr {
+    margin-bottom: 30px;
+    height: 2px;
+    width: 500px;
+}
+
+.places {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.backinfo {
+    font-size: 1rem;
+}
+
+.info1 {
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #FA6980;
+    font-size: 1rem;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.lorem {
+    font-size: 1rem;
+    color: #A6ADB4;
+}
+
+.time {
+    margin-top: 25px;
+    display: flex;
+    font-size: 0.813rem;
+    color: #A6ADB4;
+}
+
+/* damtavrda 1 seqcia */
+/* daiwyo 2 seqcia */
+.section2 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-color: white;
+    transition: transform .5s;
+
+}
+
+.card1:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: greenyellow;
+
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card2:hover {
+    cursor: pointer;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+.card3:hover {
+    cursor: pointer;
+    transform: scale(0.7);
+    border: 3px red solid;
+    box-shadow: 5px 3px 2px black, 10px 6px 25px blue, 0 0 10px darkblue;
+}
+
+.trending {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cardh {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.cardtext {
+    font-size: 0.813rem;
+    color: #A6ADB4;
+}
+
+/* damtavrda 2 seqcia  */
+/* daiwyo 3 seqcia  */
+.section3 {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.backimg2 {
+    background-image: url(../img/bridge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 760px;
+    height: 430px;
+}
+
+.backimg3 {
+    background-image: url(../img/forest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 760px;
+    height: 430px;
+    margin-top: 40px;
+}
+
+.section3h {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.backimgh {
+    padding: 40px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.backimgh2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    width: 680px;
+    padding-top: 200px;
+    padding-left: 40px;
+}
+
+.backimgp {
+    color: white;
+    font-size: 1rem;
+    width: 680px;
+    padding-left: 40px;
+}
+
+/* daiwyo 3 seqciis cardebi  */
+.seqction3cards {
+    padding-top: 105px;
+    padding-left: 80px;
+    margin-bottom: 100px;
+}
+
+.s_h {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 50px 0 35px 0;
+}
+
+/* morcha 3 seqcia  */
+/* daiwyo footer  */
+footer {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #A6ADB4;
+}
+
+.f_columns {
+    display: flex;
+    padding-left: 140px;
+    padding-top: 50px;
+}
+
+.f_logo {
+    padding-right: 60px;
+    color: white;
+    font-size: 0.813rem;
+
+}
+
+.columns {
+    padding: 5px;
+    padding-right: 60px;
+    font-size: 0.813rem;
+    color: #CBD0D3;
+}
+
+.icons {
+    margin-top: 55px;
+    margin-left: 620px;
+    display: flex;
+    gap: 20px;
+    font-size: 1rem;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+/* aq iwyeba contact html  */
+/* 1 seqcia  */
+.section4 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.backimg4 {
+    background-image: url(../img/backimg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 580px;
+    height: 500px;
+}
+
+.news {
+    padding-top: 300px;
+    padding-left: 200px;
+    font-size: 1.875rem;
+    color: white;
+}
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-left: 110px;
+    width: 580px;
+    height: 500px;
+    background-color: white;
+}
+
+.date {
+    width: 360px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm {
+    width: 140px;
+}
+
+.confirm:hover {
+    cursor: pointer;
+    background-color: aqua;
+    box-shadow: 2px 2px 5px red;
+}
+
+label {
+    font-size: 0.813rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.wn {
+    color: black;
+    border-bottom: rgb(255, 0, 136) solid 3px;
+
+}
+
+/* morcha 1 seqcia  */
+/* daiwyo 2 seqcia  */
+.section5 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    gap: 65px;
+
+}
+
+.monkey {
+    display: flex;
+    gap: 50px;
+}
+
+.s5_h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stext {
+    width: 360px;
+    height: 170px;
+    color: #A6ADB4;
+    font-size: 0.875rem;
+}
+
+.hr1 {
+    width: 80%;
+    color: #cfd0d1;
+}
+
+/* daiwyo 3 seqcia  */
+.section6 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.elephant {
+    background-image: url(..//img/elephant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1160px;
+    height: 600px;
+
+}
+
+.elephanttext {
+    padding: 80px 0 240px 0;
+    color: #A6ADB4;
+    font-size: 0.875rem;
+}
+
+/* daiwyo tabletis rezolucia  */
+@media only screen and (max-width: 768px) {
+    header {
+        width: 768px;
+    }
+
+    /* seqcia 1  */
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backimg {
+        width: 768px;
+        height: 400px;
+    }
+
+    .backimg1 {
+        margin-top: 120px;
+        width: 608;
+        height: 240px;
+    }
+
+    .info1 {
+        margin-top: 50px;
+        margin-left: 80px;
+        width: 768px;
+        height: 340px;
+    }
+
+    .info2 {
+        display: flex;
+        width: 608px;
+        height: 123px;
+        gap: 80px;
+    }
+
+    /* daiwyo 2 seqcia  */
+    .cards {
+        margin: 0 auto;
+        width: 608px;
+        height: 412px;
+    }
+
+    .card1,
+    .card2 {
+        width: 284px;
+        height: 350px;
+    }
+
+    .cardimg {
+        width: 284px;
+        height: 180px;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    /* daiwyo 3 seqcia  */
+
+    .section3 {
+        flex-direction: column;
+    }
+
+    .backimg2,
+    .backimg3 {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 608px;
+        height: 430px;
+    }
+
+    .seqction3cards {
+        display: flex;
+        padding-left: 20px;
+        gap: 45px;
+    }
+
+    .s_card3 {
+        display: none;
+    }
+
+    footer {
+        width: 768px;
+    }
+
+    .f_columns {
+        padding-left: 100px;
+    }
+
+    .icons {
+        margin-left: 1px;
+    }
+
+    /* axla iwyeba contact.html tabletis css  */
+    .section4 {
+        flex-direction: column;
+    }
+
+    .backimg4 {
+        margin-top: 130px;
+        width: 608px;
+        height: 400px;
+    }
+
+    .news {
+        padding-top: 200px;
+    }
+
+    form {
+        margin: 0 auto;
+
+    }
+
+    .reg {
+        width: 608px;
+        height: 400px;
+        padding-top: 10px;
+        padding-left: 100px;
+    }
+
+    .gorila {
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+
+    /* 2 seqcia  */
+    .section5 {
+        width: 608px;
+        height: 465px;
+        flex-direction: column;
+    }
+
+    .stext {
+        width: 284px;
+        height: 224px;
+    }
+
+    /* 3 seqcia  */
+    .elephant {
+        width: 608px;
+        height: 360px;
+    }
+}
+
+/* daiwyo telefonis rezolucia  */
+@media only screen and (max-width: 480px) {
+    header {
+        width: 480px;
+    }
+
+    .fa-bars {
+        display: unset;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* daiwyo 1 seqcia  */
+    .section1 {
+        margin: 0 auto;
+        width: 480px;
+        height: 388px;
+    }
+
+    .backimg {
+        width: 480px;
+        height: 388px;
+    }
+
+    .backimg1 {
+        margin-top: 100px;
+        width: 327px;
+        height: 308px;
+    }
+
+    .imgbutton {
+        width: 151px;
+    }
+
+    hr {
+        width: 300px;
+    }
+
+    .info1 {
+        width: 480px;
+        height: 308px;
+    }
+
+    .info2 {
+        flex-direction: column;
+        gap: 10px;
+        width: 327px;
+        height: 298px;
+    }
+
+    /* daiwyo 2 seqcia  */
+    .section2 {
+        margin-top: 500px;
+        width: 327px;
+        height: 656px;
+        flex-direction: column;
+    }
+
+    .cardtext {
+        height: 308px;
+
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* daiwyo 3 seqcia  */
+    .seqtionimg {
+        margin-top: 150px;
+    }
+
+    .backimg2,
+    .backimg3 {
+        width: 327px;
+        height: 300px;
+    }
+
+    .backimgp,
+    .backimgh2 {
+        width: 279px;
+    }
+
+    .backimgh2 {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .seqction3cards {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    /* iwyeba footer  */
+    footer {
+        width: 480px;
+    }
+
+    .f_columns {
+        display: none;
+    }
+
+    .icons {
+        margin: 0 auto;
+        margin-top: 70px;
+        gap: 30px;
+    }
+
+    /* iwyeba contact.html telefonis rezolucia  */
+    /* 1 seqcia  */
+    .backimg4 {
+        margin: 0 auto;
+        width: 375px;
+        height: 388px;
+    }
+
+    .news {
+        padding-left: 110px;
+        padding-top: 230px;
+    }
+
+    .section4 {
+        margin: 0 auto;
+        width: 480px;
+    }
+
+    .reg {
+        padding-left: 30px;
+        height: 326px;
+    }
+
+    .gorila {
+        margin-top: 50px;
+    }
+
+    .date,
+    .text {
+        width: 327px;
+    }
+
+    /* 2 seqcia  */
+    .section5 {
+        margin-left: 80px;
+        width: 480px;
+        flex-direction: column;
+    }
+
+    .monkey {
+        flex-direction: column;
+        gap: 1px;
+        width: 327px;
+    }
+
+    /* 3 seqcia  */
+    .section6 {
+        margin-left: 70px;
+    }
+
+    .elephant {
+        width: 327px;
+        height: 180px;
+    }
+
+    .elephanttext {
+        width: 327px;
+    }
+}
